@@ -36,7 +36,7 @@ namespace RedisSingletonPattern
 
 
 
-        public string GetMeterKey(string key)
+        public string GetValue(string key)
         {
            
             return redisdb.StringGet(key);

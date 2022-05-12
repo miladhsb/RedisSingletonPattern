@@ -10,9 +10,9 @@ namespace RedisSingletonPattern
             var redis = RedisRepo.SingletonInstance;
 
             string key1 = Console.ReadLine();
-            Console.WriteLine(redis.GetMeterKey(key1));
+            Console.WriteLine(redis.GetValue(key1));
             string key2=  Console.ReadLine();
-            Console.WriteLine(redis.GetMeterKey(key2));
+            Console.WriteLine(redis.GetValue(key2));
             Console.ReadKey();
         }
     }
